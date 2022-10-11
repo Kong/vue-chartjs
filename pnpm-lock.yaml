@@ -44,7 +44,7 @@ specifiers:
   jest-canvas-mock: ^2.3.1
   lint-staged: ^13.0.0
   prettier: 2.7.1
-  rollup: ^2.66.1
+  rollup: ^3.0.0
   rollup-plugin-swc: ^0.2.0
   simple-git-hooks: ^2.7.0
   simple-github-release: ^1.0.0
@@ -61,7 +61,7 @@ devDependencies:
   '@babel/preset-env': 7.18.9_@babel+core@7.18.9
   '@commitlint/cli': 17.0.3_@swc+core@1.2.218
   '@commitlint/config-conventional': 17.0.3
-  '@rollup/plugin-node-resolve': 13.3.0_rollup@2.77.0
+  '@rollup/plugin-node-resolve': 13.3.0_rollup@3.0.0
   '@size-limit/preset-big-lib': 7.0.8_vte6pnd3xtdry5yyug4odrgz3u
   '@storybook/addon-actions': 6.5.9
   '@storybook/addon-essentials': 6.5.9_dtftwja5hl22oojdgcpfzgsdv4
@@ -100,8 +100,8 @@ devDependencies:
   jest-canvas-mock: 2.4.0
   lint-staged: 13.0.3
   prettier: 2.7.1
-  rollup: 2.77.0
-  rollup-plugin-swc: 0.2.1_mmjp2x2k5p5ronlymzqdumdeiq
+  rollup: 3.0.0
+  rollup-plugin-swc: 0.2.1_s245v2szcdyqbhr3u3jd2pghji
   simple-git-hooks: 2.8.0
   simple-github-release: 1.0.0
   size-limit: 7.0.8
@@ -2287,22 +2287,22 @@ packages:
       '@octokit/openapi-types': 12.10.0
     dev: true
 
-  /@rollup/plugin-node-resolve/13.3.0_rollup@2.77.0:
+  /@rollup/plugin-node-resolve/13.3.0_rollup@3.0.0:
     resolution: {integrity: sha512-Lus8rbUo1eEcnS4yTFKLZrVumLPY+YayBdWXgFSHYhTT2iJbMhoaaBL3xl5NCdeRytErGr8tZ0L71BMRmnlwSw==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
       rollup: ^2.42.0
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.77.0
+      '@rollup/pluginutils': 3.1.0_rollup@3.0.0
       '@types/resolve': 1.17.1
       deepmerge: 4.2.2
       is-builtin-module: 3.1.0
       is-module: 1.0.0
       resolve: 1.22.1
-      rollup: 2.77.0
+      rollup: 3.0.0
     dev: true
 
-  /@rollup/pluginutils/3.1.0_rollup@2.77.0:
+  /@rollup/pluginutils/3.1.0_rollup@3.0.0:
     resolution: {integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
@@ -2311,7 +2311,7 @@ packages:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
       picomatch: 2.3.1
-      rollup: 2.77.0
+      rollup: 3.0.0
     dev: true
 
   /@rollup/pluginutils/4.2.1:
@@ -13691,7 +13691,7 @@ packages:
       inherits: 2.0.4
     dev: true
 
-  /rollup-plugin-swc/0.2.1_mmjp2x2k5p5ronlymzqdumdeiq:
+  /rollup-plugin-swc/0.2.1_s245v2szcdyqbhr3u3jd2pghji:
     resolution: {integrity: sha512-wWRYt9tC0aIBvRQHNnVtwJ6DRPDj9XYpOAcOyFB11sKSkR/R+NAmbrjBACCPNVmZcxg6joV29wXgb5mU1DI7eA==}
     peerDependencies:
       '@swc/core': '>=1.0'
@@ -13699,12 +13699,20 @@ packages:
     dependencies:
       '@rollup/pluginutils': 4.2.1
       '@swc/core': 1.2.218
-      rollup: 2.77.0
+      rollup: 3.0.0
     dev: true
 
   /rollup/2.77.0:
     resolution: {integrity: sha512-vL8xjY4yOQEw79DvyXLijhnhh+R/O9zpF/LEgkCebZFtb6ELeN9H3/2T0r8+mp+fFTBHZ5qGpOpW2ela2zRt3g==}
     engines: {node: '>=10.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
+  /rollup/3.0.0:
+    resolution: {integrity: sha512-iVomS2lySi4BM2QJb7lGZBjSndUEs6Ip+VDl25jcbM99VI5vWeEitvUSiNQkQkwqEiI4515m5shjyuwPcXS5Dg==}
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
