@@ -104,6 +104,8 @@ export const generateChart = <
       }
     },
     setup(props, context) {
+      console.log('canvasAttrs', props.canvasAttrs)
+
       ChartJS.register(chartController)
 
       const _chart = shallowRef<TypedChartJS<TType, TData, TLabel> | null>(null)
@@ -263,8 +265,6 @@ export const generateChart = <
         chart: _chart,
         updateChart
       })
-
-      console.log('canvasAttrs', props.canvasAttrs)
 
       return () =>
         h('div', { style: props.styles, class: props.cssClasses }, [

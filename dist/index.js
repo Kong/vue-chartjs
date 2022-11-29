@@ -156,6 +156,7 @@ const generateChart = (chartId, chartType, chartController) => {
       }
     },
     setup(props, context) {
+      console.log('canvasAttrs', props.canvasAttrs)
       Chart.register(chartController)
       const _chart = shallowRef(null)
       const canvasEl = ref(null)
@@ -268,7 +269,6 @@ const generateChart = (chartId, chartType, chartController) => {
         chart: _chart,
         updateChart
       })
-      console.log('canvasAttrs', props.canvasAttrs)
       return () =>
         h(
           'div',

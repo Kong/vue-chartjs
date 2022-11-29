@@ -128,6 +128,7 @@ const generateChart = (chartId, chartType, chartController)=>{
             }
         },
         setup (props, context) {
+            console.log("canvasAttrs", props.canvasAttrs);
             chart_js.Chart.register(chartController);
             const _chart = vue.shallowRef(null);
             const canvasEl = vue.ref(null);
@@ -216,7 +217,6 @@ const generateChart = (chartId, chartType, chartController)=>{
                 chart: _chart,
                 updateChart
             });
-            console.log("canvasAttrs", props.canvasAttrs);
             return ()=>vue.h("div", {
                     style: props.styles,
                     class: props.cssClasses
