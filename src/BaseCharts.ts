@@ -264,6 +264,8 @@ export const generateChart = <
         updateChart
       })
 
+      console.log('canvasAttrs', props.canvasAttrs)
+
       return () =>
         h('div', { style: props.styles, class: props.cssClasses }, [
           h('canvas', {

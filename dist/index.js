@@ -268,6 +268,7 @@ const generateChart = (chartId, chartType, chartController) => {
         chart: _chart,
         updateChart
       })
+      console.log('canvasAttrs', props.canvasAttrs)
       return () =>
         h(
           'div',
