@@ -86,6 +86,10 @@ export const generateChart = <
         type: Number,
         default: 400
       },
+      canvasAttrs: {
+        type: Object,
+        default: null
+      },
       cssClasses: {
         type: String,
         default: ''
@@ -266,7 +270,8 @@ export const generateChart = <
             id: props.chartId,
             width: props.width,
             height: props.height,
-            ref: canvasEl
+            ref: canvasEl,
+            ...props.canvasAttrs
           })
         ])
     }
