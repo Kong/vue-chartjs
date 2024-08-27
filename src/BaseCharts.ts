@@ -89,7 +89,7 @@ export const generateChart = <
       },
       canvasAttrs: {
         type: Object as PropType<Partial<CanvasHTMLAttributes>>,
-        default: () => ({}),
+        default: () => ({})
       },
       cssClasses: {
         type: String,
