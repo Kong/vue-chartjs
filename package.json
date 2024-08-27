@@ -1,6 +1,6 @@
 {
-  "name": "vue-chartjs",
-  "version": "4.1.2",
+  "name": "@kong/vue-chartjs",
+  "version": "4.1.2-patch.1",
   "description": "Vue.js wrapper for chart.js for creating beautiful charts.",
   "author": "Jakub Juszczak <jakub@posteo.de>",
   "homepage": "http://vue-chartjs.org",
@@ -24,10 +24,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:apertureless/vue-chartjs.git"
+    "url": "git+ssh://git@github.com:Kong/vue-chartjs.git"
   },
   "bugs": {
-    "url": "https://github.com/apertureless/vue-chartjs/issues"
+    "url": "https://github.com/Kong/vue-chartjs/issues"
   },
   "keywords": [
     "ChartJs",
