@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': 7.18.5
@@ -16,8 +16,8 @@ devDependencies:
   '@babel/core': 7.18.5
   '@swc/core': 1.2.212
   '@swc/jest': 0.2.21_@swc+core@1.2.212
-  '@vue/test-utils': 1.3.0_9065e7474e033a8e4b95615fc8e6c36c
-  '@vue/vue2-jest': 27.0.0_26d373cc4859410c9dfea21cb09ee348
+  '@vue/test-utils': 1.3.0_sbs6or2oam5i4s4vmfp4rzwdnq
+  '@vue/vue2-jest': 27.0.0_e3jxhtcilfaqzhp6uiolbhxdja
   babel-jest: 27.5.1_@babel+core@7.18.5
   css-loader: 6.7.1
   jest: 27.5.1
@@ -937,7 +937,7 @@ packages:
       - whiskers
     dev: true
 
-  /@vue/test-utils/1.3.0_9065e7474e033a8e4b95615fc8e6c36c:
+  /@vue/test-utils/1.3.0_sbs6or2oam5i4s4vmfp4rzwdnq:
     resolution: {integrity: sha512-Xk2Xiyj2k5dFb8eYUKkcN9PzqZSppTlx7LaQWBbdA8tqh3jHr/KHX2/YLhNFc/xwDrgeLybqd+4ZCPJSGPIqeA==}
     peerDependencies:
       vue: 2.x
@@ -950,7 +950,7 @@ packages:
       vue-template-compiler: 2.6.14
     dev: true
 
-  /@vue/vue2-jest/27.0.0_26d373cc4859410c9dfea21cb09ee348:
+  /@vue/vue2-jest/27.0.0_e3jxhtcilfaqzhp6uiolbhxdja:
     resolution: {integrity: sha512-r8YGOuqEWpAf2wGfgxfOL6Jce3WYOMcYji2qd8kuDe466ZsybHFeMryMJi6JrELOOI+MCA/8eFsSOx1KoJa7Dg==}
     peerDependencies:
       '@babel/core': 7.x
@@ -1403,7 +1403,7 @@ packages:
       lodash: ^4.17.20
       marko: ^3.14.4
       mote: ^0.2.0
-      mustache: ^4.0.1
+      mustache: ^3.0.0
       nunjucks: ^3.2.2
       plates: ~0.4.11
       pug: ^3.0.0

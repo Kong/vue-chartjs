@@ -79,6 +79,7 @@ Just create your own component.
     :chart-id="chartId"
     :dataset-id-key="datasetIdKey"
     :plugins="plugins"
+    :canvas-attrs="canvasAttrs"
     :css-classes="cssClasses"
     :styles="styles"
     :width="width"
@@ -111,6 +112,10 @@ export default {
     height: {
       type: Number,
       default: 400
+    },
+    canvasAttrs: {
+      type: Object,
+      default: () => ({})
     },
     cssClasses: {
       default: '',
@@ -146,7 +151,7 @@ or in TypeScript
 // BarChart.ts
 import { defineComponent, h, PropType } from 'vue'
 import { Bar } from 'vue-chartjs'
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale, PluginOptionsByType } from 'chart.js'
+import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale, Plugin } from 'chart.js'
 
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
 
@@ -165,6 +170,10 @@ export default defineComponent({
     height: {
       type: Number,
       default: 400
+    },
+    canvasAttrs: {
+      type: Object as PropType<Partial<CanvasHTMLAttributes>>,
+      default: () => ({}),
     },
     cssClasses: {
       default: '',
@@ -194,6 +203,7 @@ export default defineComponent({
         chartId: props.chartId,
         width: props.width,
         height: props.height,
+        canvasAttrs: props.canvasAttrs,
         cssClasses: props.cssClasses,
         styles: props.styles,
         plugins: props.plugins
