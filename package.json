@@ -24,10 +24,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:apertureless/vue-chartjs.git"
+    "url": "git+ssh://git@github.com:Kong/vue-chartjs.git"
   },
   "bugs": {
-    "url": "https://github.com/apertureless/vue-chartjs/issues"
+    "url": "https://github.com/Kong/vue-chartjs/issues"
   },
   "keywords": [
     "ChartJs",
